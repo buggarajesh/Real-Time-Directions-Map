@@ -9,15 +9,24 @@ const customIcon = new L.Icon({
   iconSize: [25, 41],
   iconAnchor: [12, 41],
 });
+const customIcons = new L.Icon({
+  iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
 
-
-const MapComponent = ({ initialLocation, destination, searchResults, route }) => {
+const MapComponent = ({ initialLocation, destination, searchResults, route, currentLocation }) => {
   return (
-    <MapContainer center={initialLocation} zoom={13} className="map-container">
+    <MapContainer center={currentLocation || initialLocation} zoom={13} className="map-container">
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={initialLocation} icon={customIcon}>
+      {currentLocation && (
+        <Marker position={currentLocation} icon={customIcons}>
+          <Popup>Current Location</Popup>
+        </Marker>
+      )}
+      <Marker position={initialLocation} icon={customIcons}>
         <Popup>Initial Location</Popup>
       </Marker>
       <Marker position={destination} icon={customIcon}>
