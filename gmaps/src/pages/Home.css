@@ -1,0 +1,59 @@
+.homepage-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .calculate-button:hover {
+    background-color: #218838;
+  }
+  
+  .switch-button:hover, .search-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  .calculate-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .distance {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }  
+  .calculate-button:hover {
+    background-color: #218838;
+  }
+  
