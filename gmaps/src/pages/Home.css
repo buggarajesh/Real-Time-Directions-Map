@@ -1,5 +1,5 @@
 .homepage-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
   }
@@ -7,6 +7,7 @@
   .title {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top: 50px;
   }
   
   .search-button {
@@ -37,10 +38,10 @@
     border-radius: 5px;
     margin-left: 10px;
   }
-  .calculate-button {
+  .calculate-button, .switch-button{
     background-color: #28a745;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
