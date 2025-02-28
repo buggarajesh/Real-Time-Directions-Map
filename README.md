@@ -1,4 +1,4 @@
-# 🌍 Real-Time Location Map using Leaflet
+# 🌍 Real-Time Directions Map using Leaflet
 
 ## 📌 Description
 A real-time location tracking web app using the **Leaflet.js** library. It allows users to:
